@@ -1,0 +1,4 @@
+spring:
+  data:
+    auto-index-creation: true
+    uri: mongodb://${MONGODB_CONNECTION_STRING}/user-blood-testing?retryWrites=true&w=majority
