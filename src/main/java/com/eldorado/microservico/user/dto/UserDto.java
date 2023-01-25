@@ -19,7 +19,6 @@ public class UserDto {
 
     private char gender;
 
-    @NonNull
     @JsonDeserialize(using = LocalDateDeserializer.class)
     @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate birthDate;

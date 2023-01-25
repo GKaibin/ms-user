@@ -22,12 +22,11 @@ services:
       RABBITMQ_DEFAULT_PASS: admin
       RABBITMQ_DEFAULT_VHOST: local-vh
 
-  eldorado-tech-service:
+  user-service:
     build: ../
-    container_name: eldorado-service-v1
+    container_name: user-service
     ports:
       - 8085:8085
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - MONGODB_CONNECTION_STRING=mongo:27017
-
